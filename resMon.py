@@ -37,6 +37,7 @@ def get_data():
 
     # Keep only last 3 minutes of data
     current_time = time.time()
+    
     while timestamps and current_time - timestamps[0] > 180:
         timestamps.pop(0)
         cpu_percentages.pop(0)

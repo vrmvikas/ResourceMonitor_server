@@ -6,7 +6,7 @@ import time
 # Establish SSH connection
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('10.64.34.32', username='suraj', password='suraj')
+ssh.connect('10.64.34.32', username='username', password='passwordgoeshere')
 
 # Lists to store values
 cpu_percentages = []
